@@ -259,7 +259,7 @@ const NavBar = () => {
     const [nav, setNav] = useState(false);
 
     return (
-        <nav className="fixed top-0 left-0 z-50 w-full mt-16 md:mt-24">
+        <nav className="absolute top-0 left-0 z-50 w-full mt-16 md:mt-24">
             <div className="container mx-auto flex items-center justify-center relative">
 
                 <div className="flex space-x-4 sm:space-x-8 md:space-x-12">
