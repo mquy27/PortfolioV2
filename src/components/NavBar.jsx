@@ -250,10 +250,10 @@ const ContactTheme = () => (
 
 const NavBar = () => {
     const links = [
-        { id: 1, name: "home", href: "/", decoration: <Sparkles /> },
-        { id: 2, name: "about", href: "/about", decoration: <AboutTheme /> },
-        { id: 3, name: "projects", href: "/projects", decoration: <SpaceTheme /> },
-        { id: 4, name: "contact", href: "/contact", decoration: <ContactTheme /> },
+        { id: 1, name: "home", href: "#home", decoration: <Sparkles /> },
+        { id: 2, name: "about", href: "#about", decoration: <AboutTheme /> },
+        { id: 3, name: "projects", href: "#projects", decoration: <SpaceTheme /> },
+        { id: 4, name: "contact", href: "#contact", decoration: <ContactTheme /> },
     ];
 
     const [nav, setNav] = useState(false);

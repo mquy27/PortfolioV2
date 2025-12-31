@@ -2,6 +2,7 @@ import React from 'react'
 import NavBar from './components/NavBar'
 import Hero from './components/Hero'
 import AboutMe from './components/AboutMe'
+import Project from './components/Project'
 import './index.css'
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
         <NavBar />
         <Hero />
         <AboutMe />
+        <Project />
       </div>
     </>
   )

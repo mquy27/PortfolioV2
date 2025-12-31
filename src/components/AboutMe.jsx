@@ -9,15 +9,15 @@ const AboutMe = () => {
         offset: ["start end", "end start"]
     });
 
-    const y = useTransform(scrollYProgress, [0, 1], [-200, 300]);
+    const y = useTransform(scrollYProgress, [0, 1], [-200, 100]);
 
     return (
-        <section ref={ref} className="w-full min-h-screen relative z-0 px-8 lg:px-24 overflow-hidden py-20 -mt-[1vh] md:-mt-[30vh]">
+        <section id="about" ref={ref} className="w-full min-h-screen relative z-0 px-8 lg:px-24 overflow-hidden py-20 -mt-[1vh] md:-mt-[30vh]">
             <div className="max-w-7xl w-full pt-[40vh] md:pt-[40vh] mx-auto grid grid-cols-1 md:grid-cols-2 relative">
 
                 {/* Left Column: Text Content */}
                 <div className="relative">
-                    <motion.h1 style={{ y }} className="text-amber-100 text-4xl md:text-6xl font-gochi font-bold absolute -top-50 md:-top-40 left-2 md:left-10">About Me</motion.h1>
+                    <motion.h1 style={{ y }} className="text-amber-100 text-4xl md:text-6xl font-gochi font-bold absolute -top-50 md:-top-30 left-2 md:left-10">About Me</motion.h1>
 
                     <div className="absolute -top-20 md:-top-10 left-0 md:left-10 w-full md:w-[700px] text-xl md:text-2xl font-gochi leading-relaxed space-y-4">
                         <p className="text-amber-100">
@@ -54,7 +54,7 @@ const AboutMe = () => {
                 {/* Right Column: Image */}
                 <div className="relative h-[400px] md:h-auto mt-96 md:mt-0">
                     <Draggable>
-                        <motion.div style={{ y }} className="absolute right-2 md:right-20 top-0 md:-top-110 cursor-grab active:cursor-grabbing">
+                        <motion.div style={{ y }} className="absolute right-2 md:right-20 top-0 md:-top-85 cursor-grab active:cursor-grabbing">
                             <div className="hidden md:block absolute -left-38 bottom-10 -rotate-12 z-10 pointer-events-none">
                                 <span className="font-gochi text-3xl text-[#e35342] font-bold text-nowrap">Drag me! ➜</span>
                             </div>

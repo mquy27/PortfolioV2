@@ -32,7 +32,7 @@ const InteractiveChar = ({ char }) => {
 
 const Hero = () => {
     return (
-        <section className="relative w-full h-screen pt-28 md:pt-18 lg:pt-44 flex justify-center items-center overflow-hidden">
+        <section id="home" className="relative w-full h-screen pt-28 md:pt-18 lg:pt-44 flex justify-center items-center overflow-hidden">
             <div
                 className="relative z-20 w-[95%] md:w-[90%] lg:w-[85%] h-[95%] md:h-[80%] lg:h-[85%] bg-[#fdfbf6] rounded-3xl shadow-2xl border-4 border-white/50 transform rotate-1"
                 style={{
