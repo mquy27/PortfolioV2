@@ -3,6 +3,7 @@ import NavBar from './components/NavBar'
 import Hero from './components/Hero'
 import AboutMe from './components/AboutMe'
 import Project from './components/Project'
+import ContactMe from './components/ContactMe'
 import './index.css'
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <Hero />
         <AboutMe />
         <Project />
+        <ContactMe />
       </div>
     </>
   )
