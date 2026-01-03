@@ -1,6 +1,6 @@
 import React from "react";
 import Draggable from "./Draggable";
-import myPic from '../assets/images/me-v2.JPEG';
+import myPic from '../assets/images/my-polaroid.JPEG';
 
 const ContactMe = () => {
     return (
