@@ -19,7 +19,7 @@ const AboutMe = () => {
                 <div className="relative">
                     <motion.h1 style={{ y }} className="text-amber-100 text-4xl md:text-6xl font-gochi font-bold absolute -top-50 md:-top-30 left-2 md:left-10">About Me</motion.h1>
 
-                    <div className="absolute -top-20 md:-top-10 left-0 md:left-10 w-full md:w-[700px] text-xl md:text-2xl font-gochi leading-relaxed space-y-4">
+                    <div className="absolute -top-50 md:-top-10 left-0 md:left-10 w-full md:w-[700px] text-xl md:text-2xl font-gochi leading-relaxed space-y-4">
                         <p className="text-amber-100">
                             Maintaining a GPA of <span className="relative inline-block mx-2">
                                 <span className="text-[#e35342] font-bold relative z-10">3.43/4.0</span>
