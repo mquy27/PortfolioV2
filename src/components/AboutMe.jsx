@@ -17,7 +17,7 @@ const AboutMe = () => {
 
                 {/* Left Column: Text Content */}
                 <div className="relative">
-                    <motion.h1 style={{ y }} className="text-amber-100 text-4xl md:text-6xl font-gochi font-bold absolute -top-50 md:-top-30 left-2 md:left-10">About Me</motion.h1>
+                    <motion.h1 style={{ y, willChange: 'transform' }} className="text-amber-100 text-4xl md:text-6xl font-gochi font-bold absolute -top-50 md:-top-30 left-2 md:left-10">About Me</motion.h1>
 
                     <div className="absolute -top-50 md:-top-10 left-0 md:left-10 w-full md:w-[700px] text-xl md:text-2xl font-gochi leading-relaxed space-y-4">
                         <p className="text-amber-100">
@@ -54,7 +54,7 @@ const AboutMe = () => {
                 {/* Right Column: Image */}
                 <div className="relative h-[400px] md:h-auto mt-96 md:mt-0">
                     <Draggable>
-                        <motion.div style={{ y }} className="absolute right-2 md:right-20 top-0 md:-top-85 cursor-grab active:cursor-grabbing">
+                        <motion.div style={{ y, willChange: 'transform' }} className="absolute right-2 md:right-20 top-0 md:-top-85 cursor-grab active:cursor-grabbing">
                             <div className="hidden md:block absolute -left-38 bottom-10 -rotate-12 z-10 pointer-events-none">
                                 <span className="font-gochi text-3xl text-[#e35342] font-bold text-nowrap">Drag me! ➜</span>
                             </div>
