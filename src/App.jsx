@@ -5,6 +5,7 @@ import AboutMe from './components/AboutMe'
 import Project from './components/Project'
 import TechStack from './components/TechStack'
 import ContactMe from './components/ContactMe'
+import Timeline from './components/Timeline'
 import './index.css'
 function App() {
 
@@ -14,8 +15,9 @@ function App() {
         <NavBar />
         <Hero />
         <AboutMe />
-        <Project />
         <TechStack />
+        <Project />
+        <Timeline />
         <ContactMe />
       </div>
     </>
