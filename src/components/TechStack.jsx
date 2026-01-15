@@ -10,6 +10,7 @@ const TechStack = () => {
     const itemsRef = useRef([]);
     const fillerRefs = useRef([]);
     const [fillerItems, setFillerItems] = useState([]);
+    const [techBodySize, setTechBodySize] = useState(80);
 
     const skills = [
         {
@@ -125,6 +126,10 @@ const TechStack = () => {
         const width = sceneRef.current.clientWidth;
         const height = sceneRef.current.clientHeight;
 
+        const isMobile = width < 768;
+        const boxSize = isMobile ? 50 : 80;
+        setTechBodySize(boxSize);
+
         const wallThickness = 100;
         const walls = [
             Bodies.rectangle(width / 2, height + wallThickness / 2, width, wallThickness, { isStatic: true }), // Bottom
@@ -137,7 +142,6 @@ const TechStack = () => {
         const techBodies = skills.map((skill) => {
             const x = Math.random() * (width - 200) + 100;
             const y = height - (Math.random() * 200 + 100);
-            const boxSize = 80;
 
             return Bodies.rectangle(x, y, boxSize, boxSize, {
                 restitution: 0.2,
@@ -148,10 +152,10 @@ const TechStack = () => {
             });
         });
 
-        const fillerCount = 30;
+        const fillerCount = isMobile ? 15 : 30;
         const fillersData = Array.from({ length: fillerCount }).map((_, i) => ({
             id: `filler-${i}`,
-            r: Math.random() * 20 + 30,
+            r: isMobile ? Math.random() * 10 + 20 : Math.random() * 20 + 30, // Smaller radius on mobile
             color: Math.random() > 0.5 ? '#374151' : '#1f2937'
         }));
 
@@ -196,11 +200,11 @@ const TechStack = () => {
                 if (domNode) {
                     const { x, y } = body.position;
                     const angle = body.angle;
-                    domNode.style.transform = `translate(${x - 40}px, ${y - 40}px) rotate(${angle}rad)`;
+                    domNode.style.transform = `translate(${x - boxSize / 2}px, ${y - boxSize / 2}px) rotate(${angle}rad)`;
 
                     const tooltipNode = tooltipsRef.current[index];
                     if (tooltipNode) {
-                        tooltipNode.style.transform = `translate(${x}px, ${y - 50}px) translateX(-50%) translateY(-100%) rotate(${skills[index].rotate}deg)`;
+                        tooltipNode.style.transform = `translate(${x}px, ${y - boxSize / 2 - 10}px) translateX(-50%) translateY(-100%) rotate(${skills[index].rotate}deg)`;
                     }
                 }
             });
@@ -229,7 +233,7 @@ const TechStack = () => {
 
     const tooltipsRef = useRef([]);
 
-    const containerClasses = "cursor-grab active:cursor-grabbing hover:scale-110 transition-transform duration-300 ease-spring w-20 h-20 flex items-center justify-center";
+    const containerClasses = "cursor-grab active:cursor-grabbing hover:scale-110 transition-transform duration-300 ease-spring flex items-center justify-center";
     const iconContainerClasses = "w-full h-full flex items-center justify-center transition-all duration-300";
 
     const tooltipClasses = "fixed top-0 left-0 w-64 bg-[#fdf6e3] text-gray-800 p-6 rounded-sm shadow-[2px_2px_15px_rgba(0,0,0,0.15)] transition-opacity duration-300 origin-bottom z-50 pointer-events-none select-none";
@@ -242,12 +246,12 @@ const TechStack = () => {
                     <h2 className="text-center text-xl md:text-4xl font-bold font-gochi text-amber-100 mt-4 pointer-events-none select-none mb-8">
                         What I've learned throughout the years ;)
                     </h2>
-                    <div className="absolute top-4 right-4 z-50">
+                    <div className="absolute top-10 right-4 md:top-4 md:right-4 z-50">
                         <button
                             onClick={() => setIsLit(!isLit)}
                             className={`p-3 cursor-pointer rounded-full border-2 transition-all duration-300 ${isLit ? 'bg-yellow-400 border-yellow-200 shadow-[0_0_20px_rgba(250,204,21,0.6)]' : 'bg-gray-700 border-gray-600'}`}
                         >
-                            {isLit ? 'ON' : 'OFF'}
+                            {isLit ? '☀' : '🌑'}
                         </button>
                     </div>
                     <div className="absolute top-20 right-20 z-50 pointer-events-none">
@@ -258,7 +262,7 @@ const TechStack = () => {
                         <p className={`${isLit ? 'text-indigo-500 drop-shadow-[0_0_8px_rgba(99,102,241,0.8)]' : 'text-gray-900'} transition-all duration-300 font-gochi text-lg md:text-3xl`}>My tools. Learned by doing.</p>
                     </div>
 
-                    <div className="absolute top-65 right-20 z-50 rotate-3">
+                    <div className="absolute md:top-65 md:right-20 top-65 right-5 z-50 rotate-3">
                         <p className={`${isLit ? 'text-[#e35342] drop-shadow-[0_0_8px_rgba(227,83,66,0.8)]' : 'text-gray-900'} transition-all duration-300 font-gochi text-lg md:text-3xl`}>Hover over the icons to uncover the details.</p>
                     </div>
                     <div
@@ -270,7 +274,20 @@ const TechStack = () => {
                         }}
                     />
 
-                    <div ref={sceneRef} className="absolute inset-0 w-full h-full overflow-hidden pointer-events-auto">
+                    <div
+                        ref={sceneRef}
+                        className="absolute inset-0 w-full h-full overflow-hidden pointer-events-auto"
+                        onClick={() => {
+                            if (window.innerWidth < 768) {
+                                tooltipsRef.current.forEach(el => {
+                                    if (el) {
+                                        el.style.opacity = '0';
+                                        el.style.visibility = 'hidden';
+                                    }
+                                });
+                            }
+                        }}
+                    >
                         {fillerItems.map((item, index) => (
                             <div
                                 key={item.id}
@@ -302,8 +319,29 @@ const TechStack = () => {
                                             tooltipsRef.current[index].style.visibility = 'hidden';
                                         }
                                     }}
+                                    onClick={(e) => {
+                                        if (window.innerWidth < 768) {
+                                            e.stopPropagation();
+                                            const isVisible = tooltipsRef.current[index]?.style.visibility === 'visible';
+
+                                            tooltipsRef.current.forEach(el => {
+                                                if (el) {
+                                                    el.style.opacity = '0';
+                                                    el.style.visibility = 'hidden';
+                                                }
+                                            });
+
+                                            if (!isVisible && tooltipsRef.current[index]) {
+                                                tooltipsRef.current[index].style.opacity = '1';
+                                                tooltipsRef.current[index].style.visibility = 'visible';
+                                            }
+                                        }
+                                    }}
                                 >
-                                    <div className={containerClasses}>
+                                    <div
+                                        className={containerClasses}
+                                        style={{ width: techBodySize, height: techBodySize }}
+                                    >
                                         <div
                                             className={`${iconContainerClasses} transition-all duration-500`}
                                             style={{
