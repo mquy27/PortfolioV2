@@ -18,8 +18,8 @@ const TechStack = () => {
             icon: <HtmlIcon className="w-full h-full" />,
             label: 'HTML5',
             color: '#e44f26',
-            desc: 'The skeleton of the web. Semantic structure is my priority.',
-            usage: ['Accessible Forms', 'SEO Best Practices'],
+            desc: 'The starting point of everything. I try my best to write clean code (no "div soup" here!) and use Semantic Tags. It helps my projects run smoothly and trying to keep the structure organized.',
+            usage: ['Semantic Structure', 'Accessible Forms', 'SEO Best Practices', 'Meta Tags & Open Graph', 'Cross-browser Support'],
             rotate: -2
         },
         {
@@ -27,8 +27,8 @@ const TechStack = () => {
             icon: <CssIcon className="w-full h-full" />,
             label: 'CSS3',
             color: '#1572b6',
-            desc: 'Animating the dull and styling the chaos.',
-            usage: ['Responsive Layouts', 'Keyframe Animations'],
+            desc: 'Making things look good is my favorite part. Before I fell in love with Tailwind, I spent a lot of time understanding how Flexbox and Grid actually work. Now I can fix those annoying layout bugs without guessing.',
+            usage: ['Responsive Layouts', 'Flexbox & Grid', 'Keyframe Animations', 'CSS Variables', 'Media Queries'],
             rotate: 1
         },
         {
@@ -46,8 +46,8 @@ const TechStack = () => {
             icon: <ReactIcon className="w-full h-full" />,
             label: 'React',
             color: '#61dafb',
-            desc: 'Component-based architecture makes my heart sing.',
-            usage: ['Custom Hooks', 'State Management'],
+            desc: 'My favorite tool to build UIs. I\'m on a journey to master its ecosystem. From building reusable Components to understanding the magic of Hooks, I\'m leveling up my skills with every line of code.',
+            usage: ['Custom Hooks', 'State Management', 'Functional Components', 'Context API', 'React Router', 'Component Lifecycle'],
             rotate: 2
         },
         {
@@ -73,7 +73,7 @@ const TechStack = () => {
             icon: <CSharpIcon className="w-full h-full" />,
             label: 'C#',
             color: '#512bd4',
-            desc: 'Robust object-oriented programming for heavy lifting.',
+            desc: 'I learned this at university. It\'s much stricter than JavaScript, but that\'s a good thing! It forced me to understand Object-Oriented Programming (OOP) and logic deeply, which actually made me a better developer overall.',
             usage: ['Backend APIs', 'Game Scripting'],
             rotate: -2
         },
