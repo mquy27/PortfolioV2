@@ -44,8 +44,8 @@ const Project = () => {
                 <div className="flex flex-col gap-6 order-2 md:order-1">
                     <h2 className="text-3xl md:text-5xl font-bold font-gochi text-[#e35342]">Portfolio V1</h2>
                     <p className="text-lg md:text-xl text-gray-300 leading-relaxed font-gochi">
-                        A personal portfolio website designed to showcase my skills and projects.
-                        It features a unique, playful design with interactive elements like draggable stickers and parallax scrolling.
+                        Portfolio V1 is a personal portfolio website I created to showcase my skills, experience, and favorite projects.
+                        It features a playful, modern design with smooth animations, and a dedicated photography gallery.
                     </p>
 
                     <div className="flex flex-wrap gap-3">
@@ -57,15 +57,15 @@ const Project = () => {
                     </div>
 
                     <div className="flex gap-3 mt-2">
-                        <a href="https://portfolio-v1.vercel.app/" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-[#e35342] text-white font-bold font-gochi rounded-lg hover:-translate-y-2 transition-all duration-200">Live Demo</a>
-                        <a href="https://github.com/your-username/portfolio-v1" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-[#e35342] text-white font-bold font-gochi rounded-lg hover:-translate-y-2 transition-all duration-200">Source Code</a>
+                        <a href="https://portfoliover1-pi.vercel.app/" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-[#e35342] text-white font-bold font-gochi rounded-lg hover:-translate-y-2 transition-all duration-200">Live Demo</a>
+                        <a href="https://github.com/mquy27/Portfolio" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-[#e35342] text-white font-bold font-gochi rounded-lg hover:-translate-y-2 transition-all duration-200">Source Code</a>
                     </div>
                 </div>
 
                 <div className="relative order-1 md:order-2 group h-[350px] md:h-auto">
                     {/* pic1 */}
-                    <Draggable>
-                        <div className="absolute -top-4 left-2 md:-top-50 md:left-10 w-[300px] h-[200px] md:w-[350px] md:h-[200px] bg-white p-3 -rotate-4 hover:-rotate-6 transition-all duration-200 shadow-2xl rounded-lg z-10">
+                    <Draggable className="md:hover:z-50">
+                        <div className="absolute -top-4 left-2 md:-top-50 md:left-10 w-[300px] h-[200px] md:w-[350px] md:h-[200px] bg-white p-3 -rotate-4 hover:-rotate-6 transition-all duration-200 shadow-2xl rounded-lg z-10 md:hover:z-50">
                             <div className="absolute -inset-4 border-4 border-dashed border-indigo-400/80 rounded-2xl pointer-events-none" />
                             <div className="w-full h-[90%] lg:h-[82%] overflow-hidden rounded-lg">
                                 <img src={port1_1} alt="Portfolio Project" className="w-full h-full object-contain rounded pointer-events-none" />
@@ -74,8 +74,8 @@ const Project = () => {
                         </div>
                     </Draggable>
                     {/* pic2 */}
-                    <Draggable>
-                        <div className="absolute top-16 left-8 md:-top-20 md:left-80 w-[300px] h-[200px] md:w-[350px] md:h-[200px] bg-white p-3 rotate-6 hover:rotate-12 transition-all duration-200 shadow-2xl rounded-lg z-20">
+                    <Draggable className="md:hover:z-50">
+                        <div className="absolute top-16 left-8 md:-top-20 md:left-80 w-[300px] h-[200px] md:w-[350px] md:h-[200px] bg-white p-3 rotate-6 hover:rotate-12 transition-all duration-200 shadow-2xl rounded-lg z-20 md:hover:z-50">
                             <div className="absolute -inset-4 border-4 border-dashed border-[#e35342]/80 rounded-2xl pointer-events-none" />
                             <div className="w-full h-[90%] lg:h-[82%] overflow-hidden rounded-lg">
                                 <img src={port1_2} alt="Portfolio Project" className="w-full h-full object-contain rounded pointer-events-none" />
@@ -84,7 +84,7 @@ const Project = () => {
                         </div>
                     </Draggable>
                     {/* pic3 */}
-                    <Draggable>
+                    <Draggable className="md:hover:z-50">
                         <div className="absolute top-40 left-2 md:top-20 md:left-10 w-[300px] h-[200px] md:w-[350px] md:h-[200px] bg-white p-3 -rotate-4 hover:rotate-2 transition-all duration-200 shadow-2xl rounded-lg z-30">
                             <div className="absolute -inset-4 border-4 border-dashed border-amber-100/80 rounded-2xl pointer-events-none" />
                             <div className="w-full h-[90%] lg:h-[82%] overflow-hidden rounded-lg">
@@ -115,7 +115,7 @@ const Project = () => {
 
                     <div className="flex gap-3 mt-2">
                         <a href="https://portfolio-v1.vercel.app/" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-indigo-500 text-white font-bold font-gochi rounded-lg hover:-translate-y-2 transition-all duration-200">Live Demo</a>
-                        <a href="https://github.com/your-username/portfolio-v1" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-indigo-500 text-white font-bold font-gochi rounded-lg hover:-translate-y-2 transition-all duration-200">Source Code</a>
+                        <a href="https://github.com/mquy27/ProjectManagement" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-indigo-500 text-white font-bold font-gochi rounded-lg hover:-translate-y-2 transition-all duration-200">Source Code</a>
                     </div>
                 </div>
 
