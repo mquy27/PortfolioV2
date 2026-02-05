@@ -6,6 +6,7 @@ import Project from './components/Project'
 import TechStack from './components/TechStack'
 import ContactMe from './components/ContactMe'
 import Timeline from './components/Timeline'
+import TarotSpread from './components/TarotSpread'
 import './index.css'
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <TechStack />
         <Project />
         <Timeline />
+        <TarotSpread />
         <ContactMe />
       </div>
     </>
