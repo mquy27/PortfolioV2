@@ -3,7 +3,7 @@ import CuttingMat from "./CuttingMat";
 import Matter from "matter-js";
 import { HtmlIcon, CssIcon, ReactIcon, JsIcon, TailwindIcon, FigmaIcon, CSharpIcon, FirebaseIcon, GithubIcon, VsIcon } from './TechIcons';
 
-const TechStack = () => {
+const TechStack = ({ className }) => {
     const [isLit, setIsLit] = useState(false);
     const sceneRef = useRef(null);
     const engineRef = useRef(null);
@@ -240,7 +240,7 @@ const TechStack = () => {
     const noteTextClasses = "font-gochi";
 
     return (
-        <section id="tech-stack" className="w-full min-h-screen px-8 lg:px-24 py-12 relative overflow-hidden flex items-center justify-center bg-transparent">
+        <section id="tech-stack" className={`w-full min-h-screen px-8 lg:px-24 py-12 relative overflow-hidden flex items-center justify-center bg-transparent ${className}`}>
             <div className="w-full">
                 <CuttingMat className="relative inset-0 max-w-full h-[700px] md:h-[600px] overflow-hidden">
                     <h2 className="text-center text-xl md:text-4xl font-bold font-gochi text-amber-100 mt-4 pointer-events-none select-none mb-8">
@@ -277,16 +277,6 @@ const TechStack = () => {
                     <div
                         ref={sceneRef}
                         className="absolute inset-0 w-full h-full overflow-hidden pointer-events-auto"
-                        onClick={() => {
-                            if (window.innerWidth < 768) {
-                                tooltipsRef.current.forEach(el => {
-                                    if (el) {
-                                        el.style.opacity = '0';
-                                        el.style.visibility = 'hidden';
-                                    }
-                                });
-                            }
-                        }}
                     >
                         {fillerItems.map((item, index) => (
                             <div
