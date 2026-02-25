@@ -81,7 +81,7 @@ const Timeline = () => {
                                         <img src={uniImg} alt="hutech university" className='w-full h-full object-cover rounded-sm' />
                                     </div>
                                     <div className='flex flex-col items-start justify-start mt-5 md:mt-0 md:ml-10 ml-0'>
-                                        <h2 className='text-2xl md:text-3xl font-serif text-black leading-none'>Hutech University</h2>
+                                        <h2 className='text-2xl md:text-3xl font-serif text-black leading-none'>HCMC University of Technology</h2>
                                         <p className='text-base md:text-xl font-gochi text-[#e35342]'>2022 - Present</p>
                                         <ul className="flex flex-col items-start justify-start italic">
                                             <li className='text-sm md:text-lg font-serif text-black'>Bachelor of Engineering in Information Technology</li>
@@ -165,7 +165,7 @@ const Timeline = () => {
 
 
                         {/* 3rd timeline */}
-                        <div className="flex-row flex-nowrap items-center gap-5 w-full min-h-min p-0 flex relative overflow-visible">
+                        {/* <div className="flex-row flex-nowrap items-center gap-5 w-full min-h-min p-0 flex relative overflow-visible">
                             <div style={{ display: 'contents' }}>
                                 <div className="flex flex-col md:flex-row flex-nowrap items-center md:gap-2 min-h-min p-0 md:mt-50 relative top-0 md:left-10 overflow-visible mt-10">
                                     <div className='md:w-50 md:h-50 w-40 h-40 pointer-events-none p-2 bg-white rounded-md shadow-sm transform transition-transform hover:scale-105 duration-300 rotate-3'>
@@ -184,7 +184,7 @@ const Timeline = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
 
                         <ParallaxSvg className="absolute top-[400px] left-[5%] w-24 h-24 z-20 opacity-80 pointer-events-none hidden md:block -rotate-12" offset={60}>
                             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320.171 320.171" className="md:w-12 md:h-12 text-[#e35342] fill-current">
