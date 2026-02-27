@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import flow1 from '../assets/images/flow-1.png';
 import flow2 from '../assets/images/flow-2.png';
 import flow3 from '../assets/images/flow-3.png';
@@ -12,6 +12,7 @@ import CuttingMat from "./CuttingMat";
 
 
 const Project = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
     return (
         <section id="projects" className="w-full min-h-screen px-8 lg:px-24 py-20 relative">
             <Draggable className="absolute top-10 left-4 md:top-20 md:left-20 z-0 hidden lg:block">
@@ -44,8 +45,7 @@ const Project = () => {
                 <div className="flex flex-col gap-6 order-2 md:order-1">
                     <h2 className="text-3xl md:text-5xl font-bold font-gochi text-[#e35342]">Portfolio V1</h2>
                     <p className="text-lg md:text-xl text-gray-300 leading-relaxed font-gochi">
-                        A personal portfolio website designed to showcase my skills and projects.
-                        It features a unique, playful design with interactive elements like draggable stickers and parallax scrolling.
+                        A personal portfolio website to showcase my projects and skills. Both versions of the website are built with React and Tailwind CSS.
                     </p>
 
                     <div className="flex flex-wrap gap-3">
@@ -57,8 +57,8 @@ const Project = () => {
                     </div>
 
                     <div className="flex gap-3 mt-2">
-                        <a href="https://portfolio-v1.vercel.app/" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-[#e35342] text-white font-bold font-gochi rounded-lg hover:-translate-y-2 transition-all duration-200">Live Demo</a>
-                        <a href="https://github.com/your-username/portfolio-v1" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-[#e35342] text-white font-bold font-gochi rounded-lg hover:-translate-y-2 transition-all duration-200">Source Code</a>
+                        <a href="https://mquyportfoliov1.vercel.app" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-[#e35342] text-white font-bold font-gochi rounded-lg hover:-translate-y-2 transition-all duration-200">Live Demo</a>
+                        <a href="https://github.com/mquy27/Portfolio" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-[#e35342] text-white font-bold font-gochi rounded-lg hover:-translate-y-2 transition-all duration-200">Source Code</a>
                     </div>
                 </div>
 
@@ -114,8 +114,8 @@ const Project = () => {
                     </div>
 
                     <div className="flex gap-3 mt-2">
-                        <a href="https://portfolio-v1.vercel.app/" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-indigo-500 text-white font-bold font-gochi rounded-lg hover:-translate-y-2 transition-all duration-200">Live Demo</a>
-                        <a href="https://github.com/your-username/portfolio-v1" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-indigo-500 text-white font-bold font-gochi rounded-lg hover:-translate-y-2 transition-all duration-200">Source Code</a>
+                        <button onClick={() => setIsModalOpen(true)} className="px-6 py-2 bg-indigo-500 text-white font-bold font-gochi cursor-pointer rounded-lg hover:-translate-y-2 transition-all duration-200 text-center">Live Demo</button>
+                        <a href="https://github.com/mquy27/ProjectManagement" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-indigo-500 text-white font-bold font-gochi rounded-lg hover:-translate-y-2 transition-all duration-200 text-center">Source Code</a>
                     </div>
                 </div>
 
@@ -160,6 +160,39 @@ const Project = () => {
                 </CuttingMat>
             </div>
 
+            {/* Coming Soon Modal */}
+            {isModalOpen && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm transition-opacity">
+                    <div className="bg-[#2a2a2a] border-2 border-indigo-500 rounded-xl p-8 max-w-sm w-full shadow-2xl relative transform transition-all">
+                        <button
+                            onClick={() => setIsModalOpen(false)}
+                            className="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors cursor-pointer"
+                        >
+                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                        <div className="text-center">
+                            <div className="w-16 h-16 bg-indigo-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg className="w-8 h-8 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                                </svg>
+                            </div>
+                            <h3 className="text-3xl font-bold font-gochi text-amber-100 mb-2">Coming Soon!</h3>
+                            <p className="text-gray-300 font-gochi text-lg">
+                                The live demo for this project is currently not available.
+                                Please check back later or view the source code.
+                            </p>
+                            <button
+                                onClick={() => setIsModalOpen(false)}
+                                className="mt-8 px-8 py-2 bg-indigo-500 text-white font-bold font-gochi rounded-lg hover:-translate-y-1 transition-all duration-200 cursor-pointer"
+                            >
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
         </section>
     );
 };
