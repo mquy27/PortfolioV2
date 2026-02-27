@@ -57,8 +57,8 @@ const Project = () => {
                     </div>
 
                     <div className="flex gap-3 mt-2">
-                        <a href="https://portfolio-v1.vercel.app/" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-[#e35342] text-white font-bold font-gochi rounded-lg hover:-translate-y-2 transition-all duration-200">Live Demo</a>
-                        <a href="https://github.com/your-username/portfolio-v1" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-[#e35342] text-white font-bold font-gochi rounded-lg hover:-translate-y-2 transition-all duration-200">Source Code</a>
+                        <a href="https://mquyportfoliov1.vercel.app" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-[#e35342] text-white font-bold font-gochi rounded-lg hover:-translate-y-2 transition-all duration-200">Live Demo</a>
+                        <a href="https://github.com/mquy27/Portfolio" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-[#e35342] text-white font-bold font-gochi rounded-lg hover:-translate-y-2 transition-all duration-200">Source Code</a>
                     </div>
                 </div>
 

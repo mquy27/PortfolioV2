@@ -69,7 +69,7 @@ const Hero = () => {
                             />
                         </div>
                         <div className="flex flex-col md:flex-row items-center md:items-baseline gap-1 md:gap-3 text-center md:text-left">
-                            <button className="flex px-2 py-1 lg:px-3 lg:py-2 bg-indigo-500 rounded-md text-white font-mono text-base lg:text-xl font-bold items-center justify-center cursor-pointer hover:scale-110 hover:-translate-y-1 transition-all duration-200">Download CV</button>
+                            <a href="/LeMinhQuyCV.pdf" target="_blank" rel="noopener noreferrer" className="flex px-2 py-1 lg:px-3 lg:py-2 bg-indigo-500 rounded-md text-white font-mono text-base lg:text-xl font-bold items-center justify-center cursor-pointer hover:scale-110 hover:-translate-y-1 transition-all duration-200">Read my CV</a>
                         </div>
                     </div>
                 </div>
