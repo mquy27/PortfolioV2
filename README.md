@@ -1,6 +1,7 @@
 # Personal Portfolio V2 🚀
 
-Welcome to the repository for my Personal Portfolio (Version 2). This project serves as a showcase of my journey as a developer, highlighting my skills, projects, and professional timeline. It is designed with a focus on smooth animations, dynamic interactions, and a clean, modern aesthetic.
+Not a complete one but it's my another portfolio and I want to share with y'all. This version I made is based on Mr.JackieZhang portfolio with interactive UI and dragable elements. Please note that I have stopped updating this project for a while so some of the UI might be not as expected including my old resume.
+
 
 ## 🌟 Features
 
