@@ -22,9 +22,9 @@ const AboutMe = () => {
                     <div className="absolute -top-50 md:-top-10 left-0 md:left-10 w-full md:w-[700px] text-xl md:text-2xl font-gochi leading-relaxed space-y-4">
                         <p className="text-amber-100">
                             Maintaining a GPA of <span className="relative inline-block mx-2">
-                                <span className="text-[#e35342] font-bold relative z-10">3.43/4.0</span>
+                                <span className="text-accent-red font-bold relative z-10">3.43/4.0</span>
                                 <svg
-                                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[145%] h-[180%] pointer-events-none text-[#e35342]"
+                                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[145%] h-[180%] pointer-events-none text-accent-red"
                                     viewBox="0 0 260 90"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ const AboutMe = () => {
                     <Draggable>
                         <motion.div style={{ y, willChange: 'transform' }} className="absolute right-2 md:right-20 top-0 md:-top-85 cursor-grab active:cursor-grabbing">
                             <div className="hidden md:block absolute -left-38 bottom-10 -rotate-12 z-10 pointer-events-none">
-                                <span className="font-gochi text-3xl text-[#e35342] font-bold text-nowrap">Drag me! ➜</span>
+                                <span className="font-gochi text-3xl text-accent-red font-bold text-nowrap">Drag me! ➜</span>
                             </div>
                             <div className="relative w-[300px] h-[250px] md:w-[350px] md:h-[300px] bg-white p-3 rotate-3 hover:-rotate-6 transition-all duration-200 shadow-2xl rounded-lg">
                                 <div className="absolute -inset-4 border-4 border-dashed border-indigo-400/80 rounded-2xl pointer-events-none" />

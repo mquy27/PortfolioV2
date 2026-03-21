@@ -263,7 +263,7 @@ const TechStack = ({ className }) => {
                     </div>
 
                     <div className="absolute md:top-65 md:right-20 top-65 right-5 z-50 rotate-3">
-                        <p className={`${isLit ? 'text-[#e35342] drop-shadow-[0_0_8px_rgba(227,83,66,0.8)]' : 'text-gray-900'} transition-all duration-300 font-gochi text-lg md:text-3xl`}>Hover over the icons to uncover the details.</p>
+                        <p className={`${isLit ? 'text-accent-red drop-shadow-[0_0_8px_rgba(227,83,66,0.8)]' : 'text-gray-900'} transition-all duration-300 font-gochi text-lg md:text-3xl`}>Hover over the icons to uncover the details.</p>
                     </div>
                     <div
                         className={`absolute top-0 left-1/2 -translate-x-1/2 w-full h-[120%] z-0 pointer-events-none transition-opacity duration-700 ease-in-out ${isLit ? 'opacity-100' : 'opacity-0'}`}

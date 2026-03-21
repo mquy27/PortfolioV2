@@ -19,9 +19,9 @@ const ContactMe = () => {
                         className="relative bg-amber-50 w-40 h-40 md:w-64 md:h-64 p-4 md:p-6 shadow-xl transform -rotate-6 flex flex-col justify-center items-center text-center font-gochi transition-transform hover:scale-105 hover:rotate-[-4deg]"
                         style={{ filter: "drop-shadow(5px 5px 10px rgba(0,0,0,0.15))" }}
                     >
-                        <div className="absolute -top-3 md:-top-4 left-1/2 transform -translate-x-1/2 w-6 h-6 md:w-8 md:h-8 bg-[#e35342] rounded-full shadow-inner border border-red-600 opacity-90"></div>
+                        <div className="absolute -top-3 md:-top-4 left-1/2 transform -translate-x-1/2 w-6 h-6 md:w-8 md:h-8 bg-accent-red rounded-full shadow-inner border border-red-600 opacity-90"></div>
 
-                        <h2 className="text-2xl md:text-4xl font-bold text-[#e35342] mb-2">Let's Connect!</h2>
+                        <h2 className="text-2xl md:text-4xl font-bold text-accent-red mb-2">Let's Connect!</h2>
                         <p className="text-sm md:text-xl text-gray-700 leading-relaxed">
                             Drag us around! <br />
                             Don't be shy, say hi!
@@ -65,8 +65,8 @@ const ContactMe = () => {
                                     <path fillRule="evenodd" clipRule="evenodd" d="M17.3106 3.7218C13.7773 3.40588 10.2228 3.40588 6.68943 3.7218L5.17208 3.85747C3.54447 4.003 2.2294 5.24642 1.99301 6.86334C1.49501 10.2697 1.49501 13.7303 1.99301 17.1366C2.2294 18.7535 3.54447 19.9969 5.17208 20.1425L6.68943 20.2781C10.2228 20.5941 13.7773 20.5941 17.3106 20.2781L18.8279 20.1425C20.4556 19.9969 21.7706 18.7535 22.007 17.1366C22.505 13.7303 22.505 10.2697 22.007 6.86334C21.7706 5.24642 20.4556 4.003 18.8279 3.85747L17.3106 3.7218ZM6.82301 5.21584C10.2675 4.90787 13.7325 4.90787 17.177 5.21584L18.6944 5.35151C19.6305 5.43521 20.3868 6.15036 20.5228 7.08033C20.9998 10.3427 20.9998 13.6572 20.5228 16.9196C20.3868 17.8496 19.6305 18.5647 18.6944 18.6484L17.177 18.7841C13.7325 19.0921 10.2675 19.0921 6.82301 18.7841L5.30567 18.6484C4.36955 18.5647 3.61319 17.8496 3.47723 16.9196C3.00027 13.6572 3.00027 10.3427 3.47723 7.08033C3.61319 6.15036 4.36955 5.43521 5.30567 5.35151L6.82301 5.21584Z" fill="currentColor" />
                                 </svg>
                                 leminhquy737@gmail.com
-                                <span className="absolute right-0 bottom-5 rotate-6 text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center text-[#e35342] font-bold whitespace-nowrap">
-                                    <svg className="w-8 h-8 mr-2 text-[#e35342]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <span className="absolute right-0 bottom-5 rotate-6 text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center text-accent-red font-bold whitespace-nowrap">
+                                    <svg className="w-8 h-8 mr-2 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M 20 6 Q 12 6 6 16 l 0 -5 m 0 5 l 5 2"></path>
                                     </svg>
                                     Email me
@@ -118,12 +118,12 @@ const ContactMe = () => {
                         className="relative bg-white w-48 p-2 pb-6 md:w-64 md:p-3 md:pb-8 shadow-2xl transform -rotate-3 transition-transform hover:scale-105 rounded-lg hover:rotate-[-1deg] group"
                         style={{ filter: "drop-shadow(0 10px 15px rgba(0,0,0,0.2))" }}
                     >
-                        <div className="absolute -top-3 md:-top-4 left-1/2 transform -translate-x-1/2 w-6 h-6 md:w-8 md:h-8 bg-[#e35342] rounded-full shadow-inner border border-red-600 opacity-90 z-10"></div>
+                        <div className="absolute -top-3 md:-top-4 left-1/2 transform -translate-x-1/2 w-6 h-6 md:w-8 md:h-8 bg-accent-red rounded-full shadow-inner border border-red-600 opacity-90 z-10"></div>
 
                         <div className="w-full h-40 md:h-56 mb-4 overflow-hidden relative flex items-center justify-center rounded-sm bg-gray-100">
                             <img src={myPic} alt="Minh Quy" className="absolute inset-0 w-full h-full object-cover pointer-events-none" />
                         </div>
-                        <p className="text-sm md:text-xl font-bold font-gochi text-[#e35342] text-center mt-1 lg:mt-2 uppercase block">Quý nè</p>
+                        <p className="text-sm md:text-xl font-bold font-gochi text-accent-red text-center mt-1 lg:mt-2 uppercase block">Quý nè</p>
                     </div>
                 </Draggable>
             </div >

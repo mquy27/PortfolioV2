@@ -69,7 +69,20 @@ const Hero = () => {
                             />
                         </div>
                         <div className="flex flex-col md:flex-row items-center md:items-baseline gap-1 md:gap-3 text-center md:text-left">
-                            <a href="/LeMinhQuyCV.pdf" target="_blank" rel="noopener noreferrer" className="flex px-2 py-1 lg:px-3 lg:py-2 bg-indigo-500 rounded-md text-white font-mono text-base lg:text-xl font-bold items-center justify-center cursor-pointer hover:scale-110 hover:-translate-y-1 transition-all duration-200">Read my CV</a>
+                            <a href="/LeMinhQuyResume_EN.pdf" target="_blank" rel="noopener noreferrer" className="flex px-2 py-1 lg:px-3 lg:py-2 bg-indigo-500 rounded-md text-white font-mono text-base lg:text-xl font-bold items-center justify-center cursor-pointer hover:scale-110 hover:-translate-y-1 transition-all duration-200">Read my CV</a>
+                        </div>
+                        <div className=" rounded-md px-3 py-2 -rotate-2 max-w-[200px] md:mt-10">
+                            <p className="font-gochi text-[11px] text-accent-red leading-snug">
+                                ! This is the old version and have stopped updating, please check my current portfolio here →{" "}
+                                <a
+                                    href="https://www.leminhquy.dev"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-indigo-500 underline underline-offset-2 hover:text-indigo-700 transition-colors"
+                                >
+                                    click here
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -145,6 +158,7 @@ const Hero = () => {
                     </svg>
                 </Draggable>
 
+
                 {/* Sparkles */}
                 <Draggable className="absolute hidden lg:flex top-2 left-150">
                     <svg
@@ -168,7 +182,7 @@ const Hero = () => {
                         <path d="M100,40 Q105,85 150,90 Q110,100 105,150 Q90,110 40,100 Q85,90 100,40" stroke="currentColor" strokeWidth="10" strokeLinecap="round" transform="translate(40, -40) scale(0.5)" />
                     </svg>
                 </Draggable>
-                <Draggable className="absolute bottom-15 right-22 md:bottom-14 md:right-12 lg:right-35 lg:bottom-30">
+                <Draggable className="absolute bottom-10 right-22 md:bottom-14 md:right-12 lg:right-35 lg:bottom-30">
                     <div className="w-[180px] h-[240px] md:w-[180px] md:h-[240px] lg:w-[250px] lg:h-[300px] bg-white border border-gray-200 rounded-xl px-2 py-3 shadow-md rotate-3 hover:-rotate-12 transition-all duration-200">
                         <div className="w-full h-[75%] lg:h-[82%] overflow-hidden rounded-lg">
                             <img src={myPic} alt="Minh Quy" className="w-full h-full object-cover pointer-events-none" />

@@ -82,7 +82,7 @@ const Timeline = () => {
                                     </div>
                                     <div className='flex flex-col items-start justify-start mt-5 md:mt-0 md:ml-10 ml-0'>
                                         <h2 className='text-2xl md:text-3xl font-serif text-black leading-none'>HCMC University of Technology</h2>
-                                        <p className='text-base md:text-xl font-gochi text-[#e35342]'>2022 - Present</p>
+                                        <p className='text-base md:text-xl font-gochi text-accent-red'>2022 - Present</p>
                                         <ul className="flex flex-col items-start justify-start italic">
                                             <li className='text-sm md:text-lg font-serif text-black'>Bachelor of Engineering in Information Technology</li>
                                             <li className='text-sm md:text-lg font-serif text-black'>GPA: 3.43/4.0</li>
@@ -124,7 +124,7 @@ const Timeline = () => {
                                 <div className="flex flex-col md:flex-row flex-nowrap items-center gap-2 min-h-min p-0 relative overflow-visible mt-10 md:mt-50 left-0 md:left-auto md:-right-100">
                                     <div className='flex flex-col items-start justify-start mt-5 md:mt-0 md:ml-10 ml-0 order-2 md:order-1'>
                                         <h2 className='text-2xl md:text-3xl font-serif text-black leading-none'>Self-study era</h2>
-                                        <p className='text-base md:text-xl font-gochi text-[#e35342]'>2025 - Present</p>
+                                        <p className='text-base md:text-xl font-gochi text-accent-red'>2025 - Present</p>
                                         <ul className="flex flex-col items-start justify-start italic">
                                             <li className='text-sm md:text-lg font-serif text-black'>Goal: Bridging the gap between Theory & Practice.</li>
                                             <li className='text-sm md:text-lg font-serif text-black'>Stack: React, Tailwind, Firebase, Figma.</li>
@@ -173,7 +173,7 @@ const Timeline = () => {
                                     </div>
                                     <div className='flex flex-col items-start justify-start mt-5 md:mt-0 md:ml-10 ml-0'>
                                         <h2 className='text-2xl md:text-3xl font-serif text-black leading-none'>Freelance Journey</h2>
-                                        <p className='text-base md:text-xl font-gochi text-[#e35342]'>2026</p>
+                                        <p className='text-base md:text-xl font-gochi text-accent-red'>2026</p>
                                         <ul className="flex flex-col items-start justify-start italic">
                                             <li className='text-sm md:text-lg font-serif text-black'>Project: Modern Website for a Local Coffee Shop.</li>
                                             <li className='text-sm md:text-lg font-serif text-black'>Role: Frontend Developer & UI Designer.</li>
@@ -187,7 +187,7 @@ const Timeline = () => {
                         </div> */}
 
                         <ParallaxSvg className="absolute top-[400px] left-[5%] w-24 h-24 z-20 opacity-80 pointer-events-none hidden md:block -rotate-12" offset={60}>
-                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320.171 320.171" className="md:w-12 md:h-12 text-[#e35342] fill-current">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320.171 320.171" className="md:w-12 md:h-12 text-accent-red fill-current">
                                 <g>
                                     <path fill="currentColor" d="M271.768,62.158C237.42,29.165,177.857,44.781,136.64,51.781
                                         C94.405,56.806,34.276,62.817,13.962,106.427c-16.573,35.571-16.763,84.681-9.013,122.254c3.209,15.539,11.4,33.717,25.351,42.485
@@ -261,7 +261,7 @@ const Timeline = () => {
                             <svg
                                 viewBox="0 0 96.433 96.433"
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="w-10 h-10 md:w-18 md:h-18 text-[#e35342] fill-current"
+                                className="w-10 h-10 md:w-18 md:h-18 text-accent-red fill-current"
                             >
                                 <g>
                                     <path d="M24.82,48.678c5.422,0,9.832-6.644,9.832-14.811c0-8.165-4.41-14.809-9.832-14.809s-9.833,6.644-9.833,14.809 C14.987,42.034,19.399,48.678,24.82,48.678z" />

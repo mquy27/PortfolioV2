@@ -22,7 +22,7 @@ const Project = () => {
             </Draggable>
 
             <Draggable className="absolute bottom-10 right-10 z-0 hidden lg:block">
-                <svg className="w-24 h-24 text-[#e35342]" width="800px" height="800px" viewBox="0 -2 20 20" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-24 h-24 text-accent-red" width="800px" height="800px" viewBox="0 -2 20 20" xmlns="http://www.w3.org/2000/svg">
                     <g id="wave" transform="translate(-2 -4)">
                         <path id="primary" d="M21,11c-2.25,0-2.25,2-4.5,2s-2.25-2-4.5-2-2.25,2-4.5,2S5.25,11,3,11" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
                         <path id="primary-2" data-name="primary" d="M3,5C5.25,5,5.25,7,7.5,7S9.75,5,12,5s2.26,2,4.51,2S18.75,5,21,5" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
@@ -43,7 +43,7 @@ const Project = () => {
             {/* Project 1 */}
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24">
                 <div className="flex flex-col gap-6 order-2 md:order-1">
-                    <h2 className="text-3xl md:text-5xl font-bold font-gochi text-[#e35342]">Portfolio V1</h2>
+                    <h2 className="text-3xl md:text-5xl font-bold font-gochi text-accent-red">Portfolio V1</h2>
                     <p className="text-lg md:text-xl text-gray-300 leading-relaxed font-gochi">
                         A personal portfolio website to showcase my projects and skills. Both versions of the website are built with React and Tailwind CSS.
                     </p>
@@ -57,8 +57,8 @@ const Project = () => {
                     </div>
 
                     <div className="flex gap-3 mt-2">
-                        <a href="https://mquyportfoliov1.vercel.app" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-[#e35342] text-white font-bold font-gochi rounded-lg hover:-translate-y-2 transition-all duration-200">Live Demo</a>
-                        <a href="https://github.com/mquy27/Portfolio" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-[#e35342] text-white font-bold font-gochi rounded-lg hover:-translate-y-2 transition-all duration-200">Source Code</a>
+                        <a href="https://www.leminhquy.dev" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-accent-red text-white font-bold font-gochi rounded-lg hover:-translate-y-2 transition-all duration-200">Live Demo</a>
+                        <a href="https://github.com/mquy27/Portfolio" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-accent-red text-white font-bold font-gochi rounded-lg hover:-translate-y-2 transition-all duration-200">Source Code</a>
                     </div>
                 </div>
 
@@ -76,11 +76,11 @@ const Project = () => {
                     {/* pic2 */}
                     <Draggable>
                         <div className="absolute top-16 left-8 md:-top-20 md:left-80 w-[300px] h-[200px] md:w-[350px] md:h-[200px] bg-white p-3 rotate-6 hover:rotate-12 transition-all duration-200 shadow-2xl rounded-lg z-20">
-                            <div className="absolute -inset-4 border-4 border-dashed border-[#e35342]/80 rounded-2xl pointer-events-none" />
+                            <div className="absolute -inset-4 border-4 border-dashed border-accent-red/80 rounded-2xl pointer-events-none" />
                             <div className="w-full h-[90%] lg:h-[82%] overflow-hidden rounded-lg">
                                 <img src={port1_2} alt="Portfolio Project" className="w-full h-full object-contain rounded pointer-events-none" />
                             </div>
-                            <p className="text-xs md:text-base xl:text-xl font-bold font-gochi text-[#e35342] text-center mt-1 lg:mt-2 uppercase block">Portfolio V1</p>
+                            <p className="text-xs md:text-base xl:text-xl font-bold font-gochi text-accent-red text-center mt-1 lg:mt-2 uppercase block">Portfolio V1</p>
                         </div>
                     </Draggable>
                     {/* pic3 */}
@@ -114,7 +114,7 @@ const Project = () => {
                     </div>
 
                     <div className="flex gap-3 mt-2">
-                        <button onClick={() => setIsModalOpen(true)} className="px-6 py-2 bg-indigo-500 text-white font-bold font-gochi cursor-pointer rounded-lg hover:-translate-y-2 transition-all duration-200 text-center">Live Demo</button>
+                        <a href="http://47.129.38.44:8080" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-indigo-500 text-white font-bold font-gochi cursor-pointer rounded-lg hover:-translate-y-2 transition-all duration-200 text-center">Live Demo</a>
                         <a href="https://github.com/mquy27/ProjectManagement" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-indigo-500 text-white font-bold font-gochi rounded-lg hover:-translate-y-2 transition-all duration-200 text-center">Source Code</a>
                     </div>
                 </div>
@@ -135,7 +135,7 @@ const Project = () => {
                             <div className="w-full h-[85%] overflow-hidden rounded">
                                 <img src={flow2} alt="Portfolio Project" className="w-full h-full object-contain pointer-events-none" />
                             </div>
-                            <p className="text-sm font-bold font-gochi text-[#e35342] text-center uppercase block mt-1">Backlog</p>
+                            <p className="text-sm font-bold font-gochi text-accent-red text-center uppercase block mt-1">Backlog</p>
                         </div>
                     </Draggable>
                     {/* pic3 */}
